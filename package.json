@@ -1,0 +1,22 @@
+{
+  "name": "iceland-tours",
+  "version": "1.0.0",
+  "description": "Landing page for iceland tours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cagl18/icelandTours.git"
+  },
+  "author": "Carlos Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cagl18/icelandTours/issues"
+  },
+  "homepage": "https://github.com/cagl18/icelandTours#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
