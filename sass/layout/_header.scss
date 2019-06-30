@@ -9,6 +9,7 @@
     background-position: top; /*ensure  the top of the image will not crop out when the viewport changes, bottom will be cropped out instead. */
     position: relative;
 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     &__logo-box {
