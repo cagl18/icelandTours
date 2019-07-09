@@ -131,6 +131,8 @@
         }
     }
 
+     //BACK SIDE STYLING
+
     &__cta {
         position: absolute;
         top:50%;
@@ -154,4 +156,50 @@
         font-weight: 100;
     }
 
+    //MEDIA QUERY FOR TABLE-PORTRAIT
+    @include respond(tab-port){
+        height:auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &__side {
+            height:auto;
+            position: relative;
+            box-shadow: none;
+
+            &--back {
+                transform: rotateY(0deg);
+                clip-path: polygon(0 15%,100% 0,100% 100%,0 100%);
+                border-radius: 0;
+            }
+        }
+        
+        &:hover &__side--front {
+            transform: rotateY(0deg);
+        }
+
+        &__details {
+            padding: 1rem 3rem;
+        }
+
+        //BACK SIDE STYLING
+
+        &__cta {
+            position: relative;
+            top:0%;
+            left:0%;
+            transform: translate(0%); /*translatinginrelationtotheelementitself*/
+            width:100%;
+            padding: 7rem 4rem 4rem 4rem;
+        }
+        
+        &__price-box {  //children will inherent fonts' settings
+            margin-bottom: 3rem;
+        }
+
+        &__price-value{
+            font-size: 4rem;
+        }
+    }
 }
