@@ -24,6 +24,17 @@
         padding: 10rem 0;
     }
 
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (min-width: 125em)
+    {
+        //image for apple retina display high resolution devices
+        background-image: linear-gradient(to right bottom,  
+        rgba($color-primary-light, 0.8),rgba($color-primary-dark, 0.8)),        
+        url(../img/nat-4-large.jpg);
+    }
+
+
 }
 .section-tours {
     background-color: $color-grey-ligtht-1;
@@ -76,6 +87,17 @@
         rgba($color-white,.9) 0%,
         rgba($color-white,.9) 100% ), 
         url(../img/nat-10.jpg);
+    }
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+           (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+           (min-width: 125em)
+    {
+        background-image: linear-gradient(105deg, 
+        rgba($color-white,.9) 0%,
+        rgba($color-white,.9) 50%,
+        transparent 50% ), 
+        url(../img/nat-10-large.jpg);
     }
 
     &__form {
