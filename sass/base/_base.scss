@@ -33,3 +33,10 @@ body {
     }
    
 }
+
+
+::selection {
+    //changing the style on selecting text
+    background-color: $color-primary;
+    color: $color-white;
+}
